@@ -1,13 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MQTT over Website</title>
+<title>MQTT over Websocket</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-<h1>Paho MQTT</h1>
-<p>My MQTT Web App</p>
-
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4"></div>
+			
+		<div class="col-sm-4">
+			<center>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuPx4R1KAEQ0ko4Javi7fVunE8qDXErgJV_DbhtpzJjSoUAeTw">
+				<div>
+					<button id="connectBtn" type="button" class="btn btn-default" style="background-color: #33ccff;">Connect</button>
+					<button id="publishBtn" type="button" class="btn btn-default" style="background-color: #33ccff;">Publish</button>
+						<input type="text" name="publishBox" placeholder="Publish Topic" id="inputBox">
+					<button id="subscribeBtn" type="button" class="btn btn-default" style="background-color: #33ccff;">Subscribe</button>
+				</div>
+			</center>			
+		</div>
+		<div class="col-sm-4">
+			
+		</div>
+	</div>
+</div>
 </body>
 
 <script type="text/javascript" src="C:\Users\2ndyrGroupB\paho-mqtt\scripts\paho-mqtt.js"></script>
