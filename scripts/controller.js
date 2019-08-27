@@ -46,8 +46,8 @@ connectBtn.addEventListener('click', function(e){
 publishBtn.addEventListener('click', function(e){
 	e.preventDefault();
 	console.log('Publishing..');
-	var input = document.getElementById('inputBox');
-	var message = new Paho.Message(''+ input.payloadString);
+	var input = document.getElementById('inputBox').value;
+	var message = new Paho.Message(''+ input);
   	message.destinationName = "World";
   	client.send(message);
 })
